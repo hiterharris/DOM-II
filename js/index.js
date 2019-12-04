@@ -35,7 +35,7 @@ document.addEventListener('keypress', () => {
 // WHEEL
 document.querySelector('.intro').addEventListener('wheel', (wheel));
 function wheel() {
-  this.style.color = 'blue';
+  this.style.color = 'red';
 }
 
 // DOUBLECLICK
