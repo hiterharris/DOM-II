@@ -17,9 +17,19 @@ logo.addEventListener("mouseout", () => {
 });
 
 // KEYDOWN
-const body = document.querySelector('body');
-body.addEventListener("keydown", () => {
-  body.style.backgroundColor = "lightgrey";
+const background = document.querySelector('*');
+document.addEventListener('keydown', () => {
+  if(background.style.backgroundColor != 'black'){
+    background.style.backgroundColor = 'black';
+    background.style.color = 'whitesmoke';
+  }
+});
+
+document.addEventListener('keypress', () => {
+  if(background.style.backgroundColor != 'white'){
+    background.style.backgroundColor = 'white';
+    background.style.color = 'black';
+  }
 });
 
 // WHEEL
